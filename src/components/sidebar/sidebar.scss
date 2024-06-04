@@ -1,0 +1,42 @@
+.sidebar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #454545;
+    width: 360px;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 20px 0px;
+
+    &__title {
+        display: flex;
+        flex-direction: row;
+        padding: 0px 40px;
+
+        img {
+            width: 10%;
+            padding: 0;
+        }
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: column;
+        a {
+            padding: 20px 40px;
+        }
+
+        .active {
+            width: 360px;
+            background-color: rgba(255, 255, 255, .2);
+            width: 360px;
+            padding: 20px 38px;
+            border-left: 2px solid #fff;
+    
+        }
+    }
+
+}
