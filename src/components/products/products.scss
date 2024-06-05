@@ -15,8 +15,9 @@
     // width: 100%;
 
     &-item {
+        position: relative;
         width: 260px;
-        height: 380px;
+        height: 390px;
         background-color: rgba(69, 69, 69, .1);
         border-radius: 10px;
         &__img img {
@@ -32,6 +33,35 @@
             flex-direction: column;
             gap: 5px;
             padding: 10px;
+        }
+    }
+
+    &__btns {
+        &__heart {
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            border: none;
+            background-color: white;
+            border-radius: 5px;
+            font-size: 25px;
+        }
+
+        &__manage {
+            width: 30px;
+            height: 30px;
+        }
+
+        &__manages {
+            display: flex;
+            justify-content: flex-end;
+            padding: 0px 10px;
+            gap: 20px;
         }
     }
 }

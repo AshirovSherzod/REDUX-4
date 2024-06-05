@@ -20,7 +20,6 @@ export const wishlistSlice = createSlice({
             );
         }
         localStorage.setItem("wishlists", JSON.stringify(state.value))
-        console.log(state.value);
     }
   },
 })

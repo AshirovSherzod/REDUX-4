@@ -6,6 +6,7 @@ import CreateProducts from './pages/admin/createProducts'
 import ManageProducts from './pages/admin/manageProducts'
 import Admin from './pages/admin'
 import Header from './components/header'
+// import SinglePage from './pages/singlepage'
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/wishlist' element={<Wishlist />} />
+        {/* <Route path='/singlepage/:id' element={<SinglePage />} /> */}
         <Route path='/admin' element={<Admin />}>
           <Route path='createproducts' element={<CreateProducts />} />
           <Route path='manageproducts' element={<ManageProducts />} />
