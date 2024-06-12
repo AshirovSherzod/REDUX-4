@@ -30,17 +30,18 @@ export const productsApi = createApi({
             }),
             invalidatesTags: ["Products"]
         }),
-        // singleProduct: builder.query({
-        //     query: (id) => ({
-        //         url: `/products/${id}`,
-        //         method: "GET"
-        //     }),
-        //     invalidatesTags: ["Products"]
-        // }),
+
+        singleProduct: builder.query({
+            query: (id) => ({
+                url: `/products/${id}`,
+                method: "GET"
+            }),
+            invalidatesTags: ["Products"]
+        }),
       
 
 
     })
 })
 
-export const { useGetAllProductsQuery, useDeleteProductsMutation, usePostProductMutation } = productsApi;
+export const { useGetAllProductsQuery, useDeleteProductsMutation, usePostProductMutation, useSingleProductQuery } = productsApi;

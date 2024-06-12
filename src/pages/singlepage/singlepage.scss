@@ -1,0 +1,13 @@
+.single {
+    display: flex;
+    flex-direction: row;
+    margin-top: 80px;
+    gap: 50px;
+    align-items: center;
+
+    &__desc {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+}

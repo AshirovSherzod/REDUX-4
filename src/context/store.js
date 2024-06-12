@@ -3,12 +3,14 @@ import { productsApi } from './apiSlice'
 import { setupListeners } from '@reduxjs/toolkit/query'
 import wishlistSlice from './wishlistSlice';
 import hideBtnSlice from './hideBtnSlice';
+import addToCardSlice  from './addToCard';
 
 export const store =  configureStore({
   reducer: {
     [productsApi.reducerPath]: productsApi.reducer,
     wishlist: wishlistSlice,
-    hideButton: hideBtnSlice
+    hideButton: hideBtnSlice,
+    addTocard: addToCardSlice
 
   },
 

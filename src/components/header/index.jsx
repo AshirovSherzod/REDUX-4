@@ -1,9 +1,11 @@
 import React from 'react'
 import './header.scss'
 import { NavLink, useLocation } from 'react-router-dom'
+import { useSelector } from 'react-redux'
 
 const Header = () => {
 
+    let wishlist = useSelector(state => state.wishlist.value)
     let {pathname} = useLocation()
     if (pathname.includes("/admin")) {
         return <></>
@@ -23,10 +25,10 @@ const Header = () => {
                             <li> <NavLink to={"/"}>Home</NavLink> </li>
                             <li> <NavLink to={"/wishlist"}>
                                 Wishlist
-                                <sup>0</sup>
+                                <sup>{wishlist.length}</sup>
                             </NavLink>
                             </li>
-                            <li> <NavLink to={"/admin/manageproducts"}>Admin</NavLink> </li>
+                            <li><NavLink to={"/addtocard"}>Cart</NavLink></li>
                         </div>
                     </div>
                 </nav>
